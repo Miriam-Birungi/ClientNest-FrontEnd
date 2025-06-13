@@ -1,13 +1,14 @@
 import React from 'react'
 import './Hero.css'
 import HeroCarousel from './HeroCarousel'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
     <section className="hero" id="home">
       <HeroCarousel />
       <div className="hero-content">
-        <button className="cta-button">Get Started</button>
+        <Link to="/login" className="cta-button">Get Started</Link>
       </div>
     </section>
   )
